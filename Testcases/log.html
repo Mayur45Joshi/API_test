@@ -2081,25 +2081,25 @@ storage = function () {
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,0,[],[0,0,1283],[],[[4,0,0,[5,6],[0,21,1263,7],[[0,8,9,0,10,11,12,0,[1,21,0],[[21,2,13]]],[0,14,15,0,16,17,18,0,[1,21,1263],[[1284,2,19],[1284,2,20],[1284,2,21]]],[0,22,9,0,23,24,0,0,[0,1284,0],[[1284,5,7]]],[0,25,9,0,26,27,0,0,[3,1284,0],[]]]]],[[1,28,15,0,29,30,0,0,[1,21,0],[[21,2,31]]]],[1,0,1,0]];
+window.output["suite"] = [1,2,3,0,[],[1,0,255],[],[[4,0,0,[],[1,151,103],[[0,5,6,0,7,8,9,0,[1,152,8],[[159,2,10]]],[0,11,6,0,12,13,14,0,[1,160,64],[[224,2,15]]],[0,16,17,0,18,19,0,0,[1,225,0],[]],[0,11,6,0,12,20,21,0,[1,226,12],[[238,2,22]]],[0,16,17,0,18,23,0,0,[1,238,0],[]],[0,11,6,0,12,24,25,0,[1,239,12],[[251,2,26]]],[0,27,17,0,28,25,0,0,[1,252,0],[]],[0,16,17,0,18,29,0,0,[1,253,0],[]]]]],[],[1,1,0,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*Pepstore","*D:\\STUDY AUTO\\Selenium with python\\API AUTOMATION\\pytestRobot\\pepstore.robot","*pytestRobot/pepstore.robot","*Delete Pet By ID","*api","*regression","*OSError: [WinError 6] The handle is invalid","*Set Variable","*BuiltIn","*<p>Returns the given values which can then be assigned to a variables.\x3c/p>","*999","*${pet_id}","*${pet_id} = 999","*DELETE On Session","*RequestsLibrary","*<p>Sends a DELETE request on a previously created HTTP Session.\x3c/p>","*mysession    /pet/${pet_id}","*${response}","*DELETE Request : url=https://petstore.swagger.io/v2/pet/999 \n path_url=/v2/pet/999 \n headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} \n body=None \n ","*DELETE Response : url=https://petstore.swagger.io/v2/pet/999 \n status=200, reason=OK \n headers={'Date': 'Sat, 16 Aug 2025 11:14:21 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'} \n body={\"code\":200,\"type\":\"unknown\",\"message\":\"999\"} \n ","*${response} = &lt;Response [200]&gt;","*Log To Console","*<p>Logs the given message to the console.\x3c/p>","*DELETE Status: ${response.status_code}","*Should Be Equal As Integers","*<p>Fails if objects are unequal after converting them to integers.\x3c/p>","*${response.status_code}    200","*Create Session","*<p>Create Session: create a HTTP session to a server\x3c/p>","*mysession    <a href=\"https://petstore.swagger.io/v2\">https://petstore.swagger.io/v2\x3c/a>    verify=False","eNptjEEKwkAMRa+SAwwdcVmYleDSjSeINk6DbVOSTLWId5cyLvt377/PPymh85ThSmYsExTbqAUcGC2Nq9U+QNEh9e6ztTHO5Oai1NgLcyZtWOJyDNATdqSWPt8Ae7mLPJmqx+J9ushEAZxHkuJ/mlXe26jSQsqPNZ1xMNo/7ehWcjrAD17fP/0="]);
+window.output["strings"] = window.output["strings"].concat(["*","*Jsonfileload","*D:\\STUDY AUTO\\Selenium with python\\API AUTOMATION\\Testcases\\jsonfileload.robot","*jsonfileload.robot","*TC1","*Load Json From File","*JSONLibrary","*<p>Load JSON from file.\x3c/p>","*D:/STUDY AUTO/Selenium with python/API.json","*${json_data}","*${json_data} = {'firstName': 'John', 'lastName': 'Doe', 'age': 30, 'address': [{'street': '123 Main St', 'city': 'New York', 'state': 'NY', 'zip': '10001'}], 'numbers': {'phone': {'type': 'mobile', 'number': '123-45...","*Get Value From Json","*<p>Get Value From JSON using JSONPath\x3c/p>","*${json_data}    $.firstName","*${name_value}","*${name_value} = ['John']","*Should Be Equal","*BuiltIn","*<p>Fails if the given objects are unequal.\x3c/p>","*${name_value[0]}    John","*${json_data}    $.address[0].street","*${street_value}","*${street_value} = ['123 Main St']","*${street_value[0]}    123 Main St","*${json_data}    $.numbers.fax.number","*${Fax_num}","*${Fax_num} = ['123-456-7891']","*Log To Console","*<p>Logs the given message to the console.\x3c/p>","*${Fax_num[0]}    123-456-7891"]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:00:01","fail":1,"label":"All Tests","pass":0,"skip":0}],[{"elapsed":"00:00:01","fail":1,"label":"api","pass":0,"skip":0},{"elapsed":"00:00:01","fail":1,"label":"regression","pass":0,"skip":0}],[{"elapsed":"00:00:01","fail":1,"id":"s1","label":"Pepstore","name":"Pepstore","pass":0,"skip":0}]];
+window.output["stats"] = [[{"elapsed":"00:00:00","fail":0,"label":"All Tests","pass":1,"skip":0}],[],[{"elapsed":"00:00:00","fail":0,"id":"s1","label":"Jsonfileload","name":"Jsonfileload","pass":1,"skip":0}]];
 </script>
 <script type="text/javascript">
 window.output["errors"] = [];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1755342859724;
+window.output["baseMillis"] = 1754289306619;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 1313;
+window.output["generated"] = 277;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;

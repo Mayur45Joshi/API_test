@@ -25,3 +25,4 @@ GetWeatherInfo
 
     ${contentvalue} =  set variable      ${response.headers.get('Content-Type')}
     should be equal    ${contentvalue}      	application/json; charset=utf-8
+

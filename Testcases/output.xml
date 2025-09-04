@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2025-08-04T12:05:06.617796" rpa="false" schemaversion="5">
+<suite id="s1" name="Jsonfileload" source="D:\STUDY AUTO\Selenium with python\API AUTOMATION\Testcases\jsonfileload.robot">
+<test id="s1-t1" name="TC1" line="9">
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2025-08-04T12:05:06.778171" level="INFO">${json_data} = {'firstName': 'John', 'lastName': 'Doe', 'age': 30, 'address': [{'street': '123 Main St', 'city': 'New York', 'state': 'NY', 'zip': '10001'}], 'numbers': {'phone': {'type': 'mobile', 'number': '123-45...</msg>
+<var>${json_data}</var>
+<arg>D:/STUDY AUTO/Selenium with python/API.json</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2025-08-04T12:05:06.770541" elapsed="0.007630"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2025-08-04T12:05:06.843184" level="INFO">${name_value} = ['John']</msg>
+<var>${name_value}</var>
+<arg>${json_data}</arg>
+<arg>$.firstName</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2025-08-04T12:05:06.779084" elapsed="0.064100"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${name_value[0]}</arg>
+<arg>John</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-08-04T12:05:06.843937" elapsed="0.000000"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2025-08-04T12:05:06.856941" level="INFO">${street_value} = ['123 Main St']</msg>
+<var>${street_value}</var>
+<arg>${json_data}</arg>
+<arg>$.address[0].street</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2025-08-04T12:05:06.844944" elapsed="0.011997"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${street_value[0]}</arg>
+<arg>123 Main St</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-08-04T12:05:06.856941" elapsed="0.000000"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2025-08-04T12:05:06.870099" level="INFO">${Fax_num} = ['123-456-7891']</msg>
+<var>${Fax_num}</var>
+<arg>${json_data}</arg>
+<arg>$.numbers.fax.number</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2025-08-04T12:05:06.857941" elapsed="0.012158"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Fax_num}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-04T12:05:06.871027" elapsed="0.000393"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${Fax_num[0]}</arg>
+<arg>123-456-7891</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-08-04T12:05:06.872061" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-08-04T12:05:06.769537" elapsed="0.103351"/>
+</test>
+<status status="PASS" start="2025-08-04T12:05:06.618799" elapsed="0.254960"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Jsonfileload">Jsonfileload</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
